@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Key-Value Paris</h1>
+  <ul class="list-group">
+    {% for data_pair in data_pairs %}
+      <li class="list-group-item">{{data_pair.key}}  :  {{data_pair.value}}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
